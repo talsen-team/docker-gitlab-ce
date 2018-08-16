@@ -1,5 +1,8 @@
 *
 
+!.vscode/
+!.vscode/tasks.json
+
 !bash-docker/
 !bash-docker/command-build.sh
 !bash-docker/util-elevate.sh

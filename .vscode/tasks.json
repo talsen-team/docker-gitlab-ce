@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "docker-build",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-build.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+  ]
+}
