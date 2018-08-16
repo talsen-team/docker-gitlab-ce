@@ -135,5 +135,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-stop",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-stop.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
