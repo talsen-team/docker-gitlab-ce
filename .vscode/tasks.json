@@ -44,5 +44,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-delete-volumes",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-delete-volumes.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
