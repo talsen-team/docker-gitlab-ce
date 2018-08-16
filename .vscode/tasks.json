@@ -31,5 +31,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-create",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-create.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
