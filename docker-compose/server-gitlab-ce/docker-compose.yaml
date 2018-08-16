@@ -1,0 +1,18 @@
+version:            '3'
+
+services:
+  server-gitlab:
+    # build:
+    #   context:      './../../docker/server-gitlab-ce'
+    #   dockerfile:   'Dockerfile'
+    container_name: '${ENV_SERVICES_SERVER_GITLAB_CE_CONTAINER_NAME}'
+    env_file:       '${ENV_PATH_FILE_SERVICES_DEFAULT_ENV_FILE}'
+    image:          'talsenteam/docker-gitab-ce:${ENV_SERVICES_SERVER_GITLAB_CE_IMAGE_TAG}'
+    ports:
+      -             '${ENV_SERVICES_SERVER_GITLAB_CE_PORTS_22}:22'
+      -             '${ENV_SERVICES_SERVER_GITLAB_CE_PORTS_80}:80'
+    restart:        '${ENV_SERVICES_SERVER_GITLAB_CE_RESTART}'
+    volumes:
+      -             '${ENV_SERVICES_SERVER_GITLAB_CE_VOLUMES_ROOT}/etc/gitlab:/etc/gitlab'
+      -             '${ENV_SERVICES_SERVER_GITLAB_CE_VOLUMES_ROOT}/var/log/gitlab:/var/log/gitlab'
+      -             '${ENV_SERVICES_SERVER_GITLAB_CE_VOLUMES_ROOT}/var/opt/gitlab:/var/opt/gitlab'

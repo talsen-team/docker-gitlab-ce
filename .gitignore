@@ -4,6 +4,10 @@
 !docker/server-gitlab-ce/
 !docker/server-gitlab-ce/Dockerfile
 
+!docker-compose/
+!docker-compose/server-gitlab-ce/
+!docker-compose/server-gitlab-ce/docker-compose.yaml
+
 !.gitignore
 
 !LICENCE
