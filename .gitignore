@@ -8,6 +8,10 @@
 !docker-compose/server-gitlab-ce/
 !docker-compose/server-gitlab-ce/docker-compose.yaml
 
+!env/
+!env/server-gitlab-ce/
+!env/server-gitlab-ce/localhost.env
+
 !.gitignore
 
 !LICENCE
