@@ -32,6 +32,7 @@
 !env/server-gitlab-ce/localhost.env
 
 !.bash-docker.command
+!.dockerignore
 !.gitignore
 
 !LICENCE
