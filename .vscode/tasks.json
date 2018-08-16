@@ -70,5 +70,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-execute-command",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-execute-command.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
