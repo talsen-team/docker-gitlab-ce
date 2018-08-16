@@ -9,6 +9,7 @@
 !bash-docker/command-create.sh
 !bash-docker/command-delete-volumes.sh
 !bash-docker/command-down.sh
+!bash-docker/command-execute-command.sh
 !bash-docker/util-elevate.sh
 !bash-docker/util-functions.sh
 
@@ -24,6 +25,7 @@
 !env/server-gitlab-ce/
 !env/server-gitlab-ce/localhost.env
 
+!.bash-docker.command
 !.gitignore
 
 !LICENCE
