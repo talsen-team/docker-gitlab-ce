@@ -18,5 +18,18 @@
         "isDefault": true
       }
     },
+    {
+      "label": "docker-clean-system",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-clean-system.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
