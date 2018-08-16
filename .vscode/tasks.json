@@ -109,5 +109,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-show",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "${USER}",
+        "command-show.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
