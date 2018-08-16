@@ -15,6 +15,7 @@
 !bash-docker/command-show.sh
 !bash-docker/command-start.sh
 !bash-docker/command-stop.sh
+!bash-docker/command-up.sh
 !bash-docker/util-elevate.sh
 !bash-docker/util-functions.sh
 
