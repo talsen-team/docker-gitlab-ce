@@ -1,5 +1,10 @@
 *
 
+!bash-docker/
+!bash-docker/command-build.sh
+!bash-docker/util-elevate.sh
+!bash-docker/util-functions.sh
+
 !docker/
 !docker/server-gitlab-ce/
 !docker/server-gitlab-ce/Dockerfile
