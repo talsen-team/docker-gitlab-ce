@@ -122,5 +122,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-start",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-start.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
