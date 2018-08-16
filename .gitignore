@@ -10,6 +10,7 @@
 !bash-docker/command-delete-volumes.sh
 !bash-docker/command-down.sh
 !bash-docker/command-execute-command.sh
+!bash-docker/command-logs.sh
 !bash-docker/util-elevate.sh
 !bash-docker/util-functions.sh
 
