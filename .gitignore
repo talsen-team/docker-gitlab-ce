@@ -8,6 +8,7 @@
 !bash-docker/command-clean-system.sh
 !bash-docker/command-create.sh
 !bash-docker/command-delete-volumes.sh
+!bash-docker/command-down.sh
 !bash-docker/util-elevate.sh
 !bash-docker/util-functions.sh
 
