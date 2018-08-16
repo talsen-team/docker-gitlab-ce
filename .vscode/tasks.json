@@ -83,5 +83,18 @@
       ],
       "problemMatcher": []
     },
+    {
+      "label": "docker-logs",
+      "type": "shell",
+      "command": "/bin/bash",
+      "args": [
+        "./bash-docker/util-elevate.sh",
+        "root",
+        "command-logs.sh",
+        "server-gitlab-ce",
+        "localhost"
+      ],
+      "problemMatcher": []
+    },
   ]
 }
