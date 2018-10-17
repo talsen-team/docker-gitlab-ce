@@ -20,5 +20,6 @@
 !.gitignore
 !.gitmodules
 
+!application.env
 !LICENCE
 !README.md
