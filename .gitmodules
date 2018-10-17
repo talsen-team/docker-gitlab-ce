@@ -1,0 +1,3 @@
+[submodule ".vscode"]
+	path = .vscode
+	url = https://github.com/talsen-team/docker-util-vs-code.git

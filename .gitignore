@@ -1,5 +1,7 @@
 *
 
+!.vscode
+
 !bash-docker/
 !bash-docker/command-build.sh
 !bash-docker/command-clean-system.sh
@@ -31,6 +33,7 @@
 !.bash-docker.command
 !.dockerignore
 !.gitignore
+!.gitmodules
 
 !LICENCE
 !README.md
