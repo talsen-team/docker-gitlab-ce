@@ -1,3 +1,6 @@
 [submodule ".vscode"]
 	path = .vscode
 	url = https://github.com/talsen-team/docker-util-vs-code.git
+[submodule "bash-docker"]
+	path = bash-docker
+	url = https://github.com/talsen-team/docker-util-bash.git

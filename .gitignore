@@ -2,6 +2,8 @@
 
 !.vscode
 
+!bash-docker
+
 !docker/
 !docker/server-gitlab-ce/
 !docker/server-gitlab-ce/Dockerfile
