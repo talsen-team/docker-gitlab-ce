@@ -1,7 +1,7 @@
 version:            '3'
 
 services:
-  server-gitlab:
+  server-gitlab-ce:
     # build:
     #   context:      './../../docker/server-gitlab-ce'
     #   dockerfile:   'Dockerfile'
