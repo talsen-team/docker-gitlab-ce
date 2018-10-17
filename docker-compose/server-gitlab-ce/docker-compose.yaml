@@ -5,19 +5,19 @@ services:
     # build:
     #   context:      './../../docker/server-gitlab-ce'
     #   dockerfile:   'Dockerfile'
-    container_name: '${ENV_SERVICES_SERVER_GITLAB_CE_CONTAINER_NAME}'
+    container_name: 'server-gitlab-ce'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'http://localhost'
         gitlab_rails['gitlab_shell_ssh_port'] = 22
         nginx['client_max_body_size'] = '250M'
-    image:          'talsenteam/docker-gitlab-ce:${ENV_SERVICES_SERVER_GITLAB_CE_IMAGE_TAG}'
-    hostname:       '${ENV_SERVICES_SERVER_GITLAB_CE_HOSTNAME}'
+    image:          'talsenteam/docker-gitlab-ce:v11.2.3-ce.0'
+    hostname:       'localhost'
     ports:
-      -             '${ENV_SERVICES_SERVER_GITLAB_CE_PORTS_22}:22'
-      -             '${ENV_SERVICES_SERVER_GITLAB_CE_PORTS_80}:80'
-    restart:        '${ENV_SERVICES_SERVER_GITLAB_CE_RESTART}'
+      -             '22:22'
+      -             '80:80'
+    restart:        'no'
     volumes:
-      -             '${ENV_SERVICES_DEFAULT_VOLUMES_ROOT}/etc/gitlab:/etc/gitlab'
-      -             '${ENV_SERVICES_DEFAULT_VOLUMES_ROOT}/var/log/gitlab:/var/log/gitlab'
-      -             '${ENV_SERVICES_DEFAULT_VOLUMES_ROOT}/var/opt/gitlab:/var/opt/gitlab'
+      -             '${ENV_PATH_VOLUMES_ROOT}/server-gitlab-ce/etc/gitlab:/etc/gitlab'
+      -             '${ENV_PATH_VOLUMES_ROOT}/server-gitlab-ce/var/log/gitlab:/var/log/gitlab'
+      -             '${ENV_PATH_VOLUMES_ROOT}/server-gitlab-ce/var/opt/gitlab:/var/opt/gitlab'
