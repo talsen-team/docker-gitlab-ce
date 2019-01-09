@@ -2,16 +2,16 @@ version:            '3'
 
 services:
   server-gitlab-ce:
-    # build:
-    #   context:      './../../docker/server-gitlab-ce'
-    #   dockerfile:   'Dockerfile'
+    build:
+      context:      './../../docker/server-gitlab-ce'
+      dockerfile:   'Dockerfile'
     container_name: 'server-gitlab-ce'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'http://server-gitlab-ce'
         gitlab_rails['gitlab_shell_ssh_port'] = 22
         nginx['client_max_body_size'] = '250M'
-    image:          'talsenteam/docker-gitlab-ce:v11.4.7-ce.0'
+    image:          'talsenteam/docker-gitlab-ce:v11.6.3-ce.0'
     hostname:       'server-gitlab-ce'
     ports:
       -             '22:22'
