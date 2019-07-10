@@ -1,6 +1,7 @@
 *
 
-!.vscode
+!.vscode/
+!.vscode/tasks.json
 !bash-docker
 !docker/
 !docker/server-gitlab-ce/
