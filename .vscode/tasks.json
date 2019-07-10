@@ -1,0 +1,193 @@
+{
+    "version":               "2.0.0",
+    "tasks":
+    [
+        {
+            "label":         "docker-build",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-build.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+            "group":
+            {
+                "kind":      "build",
+                "isDefault":  true
+            },
+        },
+        {
+            "label":         "docker-clean-system",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-clean-system.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-create",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-create.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-down",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-down.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-logs",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-logs.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-ps",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-ps.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-restart",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-restart.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-show",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "${USER}",
+                             "command-show.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-start",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-start.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-stop",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-stop.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-up",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-up.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-wipe-docker-volumes",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-wipe-docker-volumes.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-wipe-local-volumes",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash-docker/util-elevate.sh",
+                             "root",
+                             "command-wipe-local-volumes.sh",
+                             "../application.env",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "git-update-submodules",
+            "type":          "shell",
+            "command":       "git",
+            "args": [
+                             "submodule",
+                             "update",
+                             "--init",
+                             "--recursive",
+                             "--remote"
+            ],
+            "problemMatcher": [ ],
+        },
+    ]
+}
