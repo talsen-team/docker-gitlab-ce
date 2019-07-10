@@ -11,7 +11,6 @@
 !docker-compose/server-gitlab-ce/docker-compose.yaml
 !.dockerignore
 !.gitignore
-!.gitmodules
 !application.env
 !LICENCE
 !README.md
