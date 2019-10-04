@@ -11,7 +11,7 @@ services:
         external_url 'http://server-gitlab-ce'
         gitlab_rails['gitlab_shell_ssh_port'] = 22
         nginx['client_max_body_size'] = '250M'
-    image:          'talsenteam/docker-gitlab-ce:v12.1.4-ce.0'
+    image:          'talsenteam/docker-gitlab-ce:v12.3.4-ce.0'
     hostname:       'server-gitlab-ce'
     ports:
       -             '30022:22'
