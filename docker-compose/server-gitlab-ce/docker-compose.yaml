@@ -9,9 +9,9 @@ services:
     deploy:
       resources:
         limits:
-          memory:     '4G'
+          memory:     '12G'
         reservations:
-          memory:     '2G'
+          memory:     '4G'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'http://server-gitlab-ce'
