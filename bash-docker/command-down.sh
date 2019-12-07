@@ -6,4 +6,4 @@ source ./util-functions.sh
 
 prepare_docker_compose_environment ${@}
 
-docker-compose --file ${ENV_PATH_FILE_DOCKER_COMPOSE} down
+docker-compose --compatibility --file ${ENV_PATH_FILE_DOCKER_COMPOSE} down
