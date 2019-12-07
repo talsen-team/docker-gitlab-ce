@@ -6,12 +6,18 @@ services:
       context:      './../../docker/server-gitlab-ce'
       dockerfile:   'Dockerfile'
     container_name: 'server-gitlab-ce'
+    deploy:
+      resources:
+        limits:
+          memory:     '4G'
+        reservations:
+          memory:     '2G'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'http://server-gitlab-ce'
         gitlab_rails['gitlab_shell_ssh_port'] = 22
         nginx['client_max_body_size'] = '250M'
-    image:          'talsenteam/docker-gitlab-ce:v12.4.2-ce.0'
+    image:          'talsenteam/docker-gitlab-ce:v12.5.3-ce.0'
     hostname:       'server-gitlab-ce'
     ports:
       -             '30022:22'
