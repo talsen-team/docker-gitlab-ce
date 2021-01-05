@@ -14,14 +14,17 @@ services:
           memory:     '4G'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://server-gitlab-ce'
+        external_url 'http://localhost'
         gitlab_rails['gitlab_shell_ssh_port'] = 22
         nginx['client_max_body_size'] = '250M'
+        registry_external_url 'http://localhost:30250'
+        registry_nginx['enable'] = true
     image:          'talsenteam/docker-gitlab-ce:v13.7.1-ce.0'
     hostname:       'server-gitlab-ce'
     ports:
       -             '30022:22'
       -             '80:80'
+      -             '30250:30250'
     restart:        'no'
     volumes:
       -             '${ENV_PATH_VOLUMES_ROOT}/server-gitlab-ce/etc/gitlab:/etc/gitlab'
