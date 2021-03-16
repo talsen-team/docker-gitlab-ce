@@ -19,7 +19,7 @@ services:
         nginx['client_max_body_size'] = '250M'
         registry_external_url 'http://localhost:30250'
         registry_nginx['enable'] = true
-    image:          'talsenteam/docker-gitlab-ce:v13.8.4-ce.0'
+    image:          'talsenteam/docker-gitlab-ce:v13.9.3-ce.0'
     hostname:       'server-gitlab-ce'
     ports:
       -             '30022:22'
